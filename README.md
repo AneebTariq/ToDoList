@@ -16,8 +16,6 @@ To build and run this project, you need the following tools:
 ### Installation
 Follow these steps to clone the repository and set up the project locally:
 
-```bash
-
 ## Clone the repository
 git clone https://github.com/AneebTariq/ToDoList.git
 
