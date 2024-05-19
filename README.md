@@ -42,9 +42,7 @@ cd todo_app
 
  State Management: Choosing the appropriate state management solution and implementing it effectively with flutter_bloc.
 
- Local Storage: Integrating shared_preferences to store tasks locally and ensure data persistence.
-
- Responsive Design: Ensuring the UI scales well on different devices using flutter_screenutil.
+ Testing: Testing is a bit difficult for me becuase its my first time to write testing.
 
 
 # Additional Features
