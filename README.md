@@ -40,20 +40,20 @@ cd todo_app
 
 # Challenges Faced
 
-## State Management: Choosing the appropriate state management solution and implementing it effectively with flutter_bloc.
+### State Management: Choosing the appropriate state management solution and implementing it effectively with flutter_bloc.
 
-## Local Storage: Integrating shared_preferences to store tasks locally and ensure data persistence.
+### Local Storage: Integrating shared_preferences to store tasks locally and ensure data persistence.
 
-## Responsive Design: Ensuring the UI scales well on different devices using flutter_screenutil.
+### Responsive Design: Ensuring the UI scales well on different devices using flutter_screenutil.
 
 
 # Additional Features
 
-## Custom Fonts: Integrated with google_fonts for a better visual appeal.
+### Custom Fonts: Integrated with google_fonts for a better visual appeal.
 
-## User Notifications: Added toast notifications using fluttertoast to inform users of task actions.
+### User Notifications: Added toast notifications using fluttertoast to inform users of task actions.
 
-## Dialogues: Used awesome_dialog for improved alert and confirmation dialogs.
+### Dialogues: Used awesome_dialog for improved alert and confirmation dialogs.
 
 
 # Screenshots
@@ -70,19 +70,19 @@ cd todo_app
 
 ![CHEESE!](assets/images/delete_todo_image.jpg)
 
-Features:
+# Features:
 
-Backend with API
-Scalable
-Performance friendly
-Home page
-Crud ToDoList
-Login panel
-Easy to edit
-Null safety
+### Backend with API
+### Scalable
+### Performance friendly
+### Home page
+### Crud ToDoList
+### Login panel
+### Easy to edit
+### Null safety
 
-Login Credentionals
+# Login Credentionals
 
-name: kminchelle
+## name: kminchelle
 
-Password: 0lelplR
+## Password: 0lelplR
