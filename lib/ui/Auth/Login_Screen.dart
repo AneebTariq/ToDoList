@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 context, MaterialPageRoute(builder: (context) => HomeScreen()));
             showToast('Login Successfully', true);
           }
-          if (state is ErrorState) {
+          if (state is LoginErrorState) {
             showToast(state.error, false);
           }
         },

@@ -36,7 +36,6 @@ bool isDataLoad = false;
     });
     BlocProvider.of<HomeBloc>(context)
         .add(DataFetchEvent(currentPage, limit));
-
     super.initState();
   }
 @override
@@ -87,14 +86,20 @@ void dispose() {
             currentPage++;
             });
           }
+          if(state is DeleteSuccessState){
+            Navigator.of(context).pop();
+            showToast( 'ToDo Delete successfully!',true);
+          }else if(state is DeleteProgressState){
+            showLoadingDialog(context, loaderColor: AppColors.primaryColor, size: 20);
+          }else if(state is DeleteErrorState){
+            showToast(state.error, false);
+          }
         },
         child: BlocBuilder<HomeBloc, HomeState>(
           builder: (BuildContext context, state) {
             if (state is ProgressState) {
               return const Center(child: CircularProgressIndicator());
             }
-            if (state is DataLoadedState) {
-
               return ListView.builder(
                   itemCount: _data.length,
                   itemBuilder: (context, int i) {
@@ -193,12 +198,6 @@ void dispose() {
                   },
                 );
 
-            }else{
-              return const SizedBox(
-                child: Text('No Data Found'),
-              );
-            }
-           // return const Center(child: CircularProgressIndicator());
           },
         ),
       ),

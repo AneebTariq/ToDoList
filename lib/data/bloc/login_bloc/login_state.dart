@@ -13,10 +13,10 @@ class LoginSuccessState extends LonigState {
 
 class ProgressState extends LonigState {}
 
-class ErrorState extends LonigState {
+class LoginErrorState extends LonigState {
   String error;
 
-  ErrorState({required this.error});
+  LoginErrorState({required this.error});
 
   @override
   String toString() => 'LoginFailure{error": $error}';

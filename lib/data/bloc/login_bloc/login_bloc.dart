@@ -24,10 +24,10 @@ class LoginBloc extends Bloc<LoginEvent, LonigState> {
           await sharepref.setUser(loginModel!);
           yield LoginSuccessState(loginDetails: loginModel);
         } else {
-          yield ErrorState(error: 'Something went wrong');
+          yield LoginErrorState(error: 'Something went wrong');
         }
       } catch (e) {
-        yield ErrorState(error: "User not Found $e");
+        yield LoginErrorState(error: "User not Found $e");
       }
     }
   }
